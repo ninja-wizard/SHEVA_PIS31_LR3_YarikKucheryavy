@@ -15,15 +15,29 @@ body
     /* display: inline-block; */
     width: 50%;
     height: 100%;
-    background: url('./lr2/photo/wallpaper@3x.png');
+    background: url('./lr2/photo/wallpaper.png');
     background-size: cover;
     position: fixed;
 }
 .background-right
 {
-    /* display: inline-block; */
     width: 50%;
-    height: 10000%;
+    height: 1000%; /* over 9000 */
     float: right;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(241, 241, 241);
+}
+.Headline-H1
+{
+    padding: 35% 20% 50% 10%;
+    text-align: center;
+
+    /* color */
+    font-family: Geomanist;
+    font-size: 48px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #2c2c35;
 }
