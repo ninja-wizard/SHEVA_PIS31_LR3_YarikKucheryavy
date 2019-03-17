@@ -85,6 +85,7 @@ body
     margin-right: 10%;
     margin-top: 15%;
     margin-bottom: 10px;
+    width: 35%;
 
     font-family: 'Geomanist', 'Helvetica', sans-serif;
     font-size: 53px;
@@ -102,6 +103,7 @@ body
     margin-left: 55%;
     margin-right: 10%;
     margin-top: 10px;
+    width: 35%;
 
     font-family: 'Helvetica';
     font-size: 22px;
@@ -116,14 +118,13 @@ body
 }
 .arrow-down
 {
-    /* position: relative; */
-    margin-top: 15%;
-    margin-left: 75%;
-    margin-right: 25%;
+    margin-top: 13%;
+    margin-left: 73%;
+    margin-right: 20%;
     margin-bottom: 50px;
 
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
 }
 .example
 {
