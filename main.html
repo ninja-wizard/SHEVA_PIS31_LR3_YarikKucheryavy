@@ -13,6 +13,15 @@
                 </br>
                 <h3 class='blog'>— Blog</h3>
             </div>
+            <div class='icons'>
+                <img class='logo' src='.\LR2\icons\icon-facebook.svg'>
+                <img class='logo' src='.\LR2\icons\icon-instagram.svg'>
+                <img class='logo' src='.\LR2\icons\icon-linkedin.svg'>
+            </div>
+            <div class='goto-website'>
+                <img class='arrow-left' src='.\LR2\icons\arrow-left.svg'>
+                <p class='website-text'>Go to my website</p>
+            </div>
         </div>
 
         <div class='background-right'>
@@ -20,9 +29,9 @@
             <h2 class='Sub-title'> When a Web Design Template Makes Sense. In general, you may want
                 to select a pre-configured web design template, when you're in the
                 following situations...</h2>
-            <img class='arrow-down' src='./lr2/icons/arrow-down.svg'>
+            <a href='./main.html#page2'><img class='arrow-down' src='./lr2/icons/arrow-down.svg'></a>
             <!-- NEXT PAGE -->
-            <h2 class='Headline-H2'>One morning, when Gregor Samsa woke from troubled dreams...</h2>
+            <h2 class='Headline-H2' id='page2'>One morning, when Gregor Samsa woke from troubled dreams...</h2>
             <p class='text'>...he found himself transformed in his bed into a horrible
                 vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed
                 and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any
@@ -99,5 +108,22 @@
                 <!-- <form class='subscribe-form'></form> -->
             </div>
         </div>
+
+        <script>
+            var arrow = document.getElementsByClassName('arrow-down');
+            arrow = arrow[0];
+            window.onscroll = function() {
+                // arrow.style.opacity = "100";
+                // arrow.style.animationName = "disappear";
+                // arrow.style.animationIterationCount = "1";
+                // arrow.style.animationPlayState = "running";
+                arrow.style.visibility = 'hidden';
+            };
+            // arrow.onclick = function() {
+            //     var pos = document.getElementsByClassName('Headline-H2');
+            //     pos = pos[0];
+            //     pos.scrollIntoView();
+            // }
+        </script>
     </body>
 </html>
