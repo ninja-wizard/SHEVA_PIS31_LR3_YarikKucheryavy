@@ -210,6 +210,12 @@ body
     letter-spacing: normal;
     color: #2c2c35;
 }
+.hyperlink
+{
+    color: blue;
+    font-style: normal;
+    text-decoration: underline;
+}
 .Headline-H4 {
     margin-top: 72px;
     margin-left: 55%;
@@ -249,17 +255,34 @@ body
     display: table;
 }
 .bottom{
+    position: relative;
     margin:40px 0 0 50%;
     width:50%;
-    padding-top:5%;
     padding-bottom:5%;
     
     box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.15);
     background-image: linear-gradient(to bottom, rgb(253, 253, 253), rgb(248, 248, 248), rgb(238, 238, 238), rgb(185, 185, 185));
 }
+.share{
+    position: absolute;
+    top: -35px;
+    right: 10%;
+    width: 96px;
+    height: 96px;
+    background-color: #5a5aff;
+    background-image: url('./LR2/icons/share.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    border-radius: 50%;
+}
+.share:hover{
+    background-color: #ff9c5a;
+}
 .info
 {
-    border: 1px solid black;
+    margin-top: 50px;
+    /* border: 1px solid black; */
     display: flex;
     flex-wrap: nowrap;
 
@@ -267,23 +290,27 @@ body
 }
 .info-photo{
     width: 25%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: right;
+    padding-top: 20px;
 
 }
 .author-photo-second{
     margin-top: 30%;
+    margin-left: 10%;
     border-radius: 50%;
 }
 .info-text{
+    padding: 5%;
+    padding-right: 15%;
+
     display: block;
-    padding:5%;
     width: 75%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
 }
 .author-name-second{
-
+    
     font-family: 'Helvetica', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -297,6 +324,7 @@ body
 }
 .bio
 {
+
     font-family: Helvetica;
     font-weight: normal;
     font-style: normal;
@@ -309,5 +337,62 @@ body
 }
 .subscribe-form
 {
-    border: 1px solid black;
+    position: relative;
+}
+.input-field
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 12px 25% 12px 56px;
+    width: 50%;
+    margin-right: 50px;
+
+
+    background-image: url('./LR2/icons/mail.svg');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 16px 10px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 25px;
+    color: rgb(121, 121, 121);
+
+    font-family: Helvetica;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.input-field::placeholder
+{
+    color:rgb(175, 175, 175);
+}
+.subscribe-button
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    padding: 13px 13px;
+
+    border: none;
+    /* border: 1px solid rgb(185, 185, 185); */
+    border-radius: 25px;
+    color: white;
+    background-color: #29b1cc;
+
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.subscribe-button:hover
+{
+    background-color: #29cc6d;
 }
