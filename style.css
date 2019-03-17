@@ -251,42 +251,39 @@ body
 .bottom{
     margin:40px 0 0 50%;
     width:50%;
-    height: 400px;
+    padding-top:5%;
+    padding-bottom:5%;
     
-    display: inline-block;
-
     box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.15);
     background-image: linear-gradient(to bottom, rgb(253, 253, 253), rgb(248, 248, 248), rgb(238, 238, 238), rgb(185, 185, 185));
 }
 .info
 {
-    margin: 10%;
     border: 1px solid black;
-    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+
+    align-items: flex-start;
 }
 .info-photo{
     width: 25%;
-    float: left;
-    box-sizing: border-box;
     border: 1px solid black;
+    justify-content: right;
+
 }
 .author-photo-second{
-    margin-top: 1%;
-    margin-right: 5%;
-    margin-bottom: 1%;
+    margin-top: 30%;
     border-radius: 50%;
-    float: left;
-    box-sizing: border-box;
 }
 .info-text{
+    display: block;
+    padding:5%;
     width: 75%;
-    float: left;
-    box-sizing: border-box;
     border: 1px solid black;
+    
 }
 .author-name-second{
-    margin-top: 0;
-    
+
     font-family: 'Helvetica', sans-serif;
     font-size: 20px;
     font-weight: bold;
