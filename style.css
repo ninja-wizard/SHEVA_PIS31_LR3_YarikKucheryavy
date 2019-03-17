@@ -262,6 +262,13 @@ body
 {
     margin: 10%;
     border: 1px solid black;
+    box-sizing: border-box;
+}
+.info-photo{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 .author-photo-second{
     margin-top: 1%;
@@ -269,10 +276,17 @@ body
     margin-bottom: 1%;
     border-radius: 50%;
     float: left;
+    box-sizing: border-box;
+}
+.info-text{
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 .author-name-second{
     margin-top: 0;
-
+    
     font-family: 'Helvetica', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -295,4 +309,8 @@ body
     font-size: 16px;
     text-shadow: 0px 0px 1px rgb(231, 231, 231);
     color: #2c2c35;
+}
+.subscribe-form
+{
+    border: 1px solid black;
 }
