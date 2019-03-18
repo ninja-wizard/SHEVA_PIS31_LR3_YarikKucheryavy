@@ -1,3 +1,4 @@
+
 html
 {
     height: 100%;
@@ -9,8 +10,17 @@ body
     height: 100%;
     padding: 0;
     margin: 0;
+    min-width: 1024px;
 }
 
+@font-face{
+    font-family: 'Geomantist';
+    font-weight: normal;
+    src: url('./LR2/fonts/geomanist-regular.eot'),
+     url('./LR2/fonts/geomanist-regular.woff') format('woff'),
+     url('./LR2/fonts/geomanist-regular.ttf') format('truetype'),
+     url('./LR2/fonts/geomanist-regular.svg') format('svg');
+}
 
 .background-left
 {
@@ -31,6 +41,8 @@ body
 
     border-radius: 50%;
     float: left;
+    background-position: right center;
+    background-size: 100px 100px;
 }
 .author-name
 {
@@ -142,17 +154,21 @@ body
 
 
 /* Right side */
+.background-right
+{
+    
+}
 .Headline-H1
 {
     display: inline-block;
 
     margin-left: 55%;
     margin-right: 10%;
-    margin-top: 250px;
+    margin-top: 10%;
     margin-bottom: 10px;
     width: 35%;
 
-    font-family: 'Geomanist', 'Helvetica', sans-serif;
+    font-family: 'Geomantist', 'Helvetica';
     font-size: 53px;
     font-weight: normal;
     font-style: normal;
@@ -170,7 +186,7 @@ body
     margin-top: 10px;
     width: 35%;
 
-    font-family: 'Helvetica';
+    font-family: 'Geomantist', 'Helvetica';
     font-size: 22px;
     font-weight: normal;
     font-style: normal;
@@ -186,18 +202,18 @@ body
     0% 
     {
         opacity: 0;
-        margin-top: 220px;
-        margin-bottom: 80px;
+        margin-top: 20px;
+        margin-bottom: 100px;
     }
     50%
     {
-        opacity: 100;
+        opacity: 1;
     }
     100% 
     {
         opacity: 0;
-        margin-top: 280px;
-        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 70px;
     }
 }
 @keyframes disappear
@@ -213,10 +229,10 @@ body
 }
 .arrow-down
 {
-    margin-top: 220px;
+    margin-top: 20px;
     margin-left: 73%;
     margin-right: 20%;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     
     opacity: 0;
 
@@ -234,7 +250,7 @@ body
     margin-left: 55%;
     margin-right: 10%;   
 
-    font-family: 'Geomanist', 'Helvetica';
+    font-family: 'Geomantist', 'Helvetica';
     font-size: 40px;
     font-weight: normal;
     font-style: normal;
@@ -303,7 +319,7 @@ body
     margin-left: 55%;
     margin-right: 10%;
 
-    font-family: 'Geomanist', 'Helvetica';
+    font-family: 'Geomantist', 'Helvetica';
     font-size: 36px;
     font-weight: normal;
     font-style: normal;
@@ -323,7 +339,7 @@ body
     margin-left: 55%;
     margin-right: 10%;
 
-    font-family: 'Geomanist', 'Helvetica';
+    font-family: 'Geomantist', 'Helvetica';
     font-size: 32px;
     font-weight: normal;
     font-style: normal;
@@ -365,6 +381,25 @@ body
     box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.15);
     background-image: linear-gradient(to bottom, rgb(253, 253, 253), rgb(248, 248, 248), rgb(238, 238, 238), rgb(185, 185, 185));
 }
+@keyframes barrelroll
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    25%
+    {
+        transform: rotate(90deg);
+    }
+    50%
+    {
+        transform: rotate(180deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
 .share{
     position: absolute;
     top: -35px;
@@ -377,9 +412,18 @@ body
     background-position: center;
     background-size: 32px;
     border-radius: 50%;
+
 }
 .share:hover{
     background-color: #ff9c5a;
+    
+    cursor: pointer;
+
+    animation-name: barrelroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
 .info
 {
@@ -477,7 +521,7 @@ body
     position: absolute;
     top: 0;
     right: 0;
-    width: 25%;
+    /* width: 25%; */
     padding: 13px 13px;
 
     border: none;
