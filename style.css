@@ -29,6 +29,8 @@ body
     background: url('./lr2/photo/wallpaper.png');
     background-size: cover;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 .author
 {
@@ -156,17 +158,18 @@ body
 /* Right side */
 .background-right
 {
-    
+    display: inline-block;
+    margin-left: 50%;
+    border: 1px solid black;
+    width: 45%;
 }
 .Headline-H1
 {
-    display: inline-block;
 
-    margin-left: 55%;
+    margin-left: 10%;
     margin-right: 10%;
     margin-top: 10%;
     margin-bottom: 10px;
-    width: 35%;
 
     font-family: 'Geomantist', 'Helvetica';
     font-size: 53px;
@@ -181,10 +184,9 @@ body
 }
 .Sub-title
 {
-    margin-left: 55%;
+    margin-left: 10%;
     margin-right: 10%;
     margin-top: 10px;
-    width: 35%;
 
     font-family: 'Geomantist', 'Helvetica';
     font-size: 22px;
@@ -230,8 +232,8 @@ body
 .arrow-down
 {
     margin-top: 20px;
-    margin-left: 73%;
-    margin-right: 20%;
+    margin-left: 49%;
+    margin-right: 49%;
     margin-bottom: 100px;
     
     opacity: 0;
@@ -247,7 +249,7 @@ body
 .Headline-H2 
 {
     margin-top: 72px;
-    margin-left: 55%;
+    margin-left: 10%;
     margin-right: 10%;   
 
     font-family: 'Geomantist', 'Helvetica';
@@ -263,8 +265,9 @@ body
 .text
 {
     margin-top: 32px;
-    margin-left: 55%;
-    margin-right: 10%;
+    
+    margin-left: 10%;
+    margin-right: 10%;   
 
     font-family: 'Helvetica';
     font-size: 18px;
@@ -279,7 +282,7 @@ body
 .Sherwood-Forest-Lake 
 {
     margin-top: 20px;
-    margin-left: 50%;
+    margin-left: 0;
     margin-right: 40px;
     margin-bottom: 40px;
 
@@ -288,15 +291,16 @@ body
 .lake
 {
     margin-top: 40px;
-    margin-left: 50%;
-    width: 50%;
+    margin-left: 0;
+    width: 100%;
 
 }
 .lake-description
 {
     margin-top: 16px;
-    margin-left: 55%;
-    margin-right: 10%;
+    
+    margin-left: 10%;
+    margin-right: 10%;   
 
     text-align: center;
     color: rgb(172, 172, 172);
@@ -308,7 +312,7 @@ body
 }
 .grey-line
 {
-    margin-left: 55%;
+    margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 40px;
     width: 35%;
@@ -316,8 +320,9 @@ body
 }
 .Headline-H3 {
     margin-top: 72px;
-    margin-left: 55%;
-    margin-right: 10%;
+    
+    margin-left: 10%;
+    margin-right: 10%;   
 
     font-family: 'Geomantist', 'Helvetica';
     font-size: 36px;
@@ -336,8 +341,9 @@ body
 }
 .Headline-H4 {
     margin-top: 72px;
-    margin-left: 55%;
-    margin-right: 10%;
+    
+    margin-left: 10%;
+    margin-right: 10%;   
 
     font-family: 'Geomantist', 'Helvetica';
     font-size: 32px;
@@ -374,8 +380,8 @@ body
 }
 .bottom{
     position: relative;
-    margin:40px 0 0 50%;
-    width:50%;
+    margin: 0;
+    width:100%;
     padding-bottom: 100px;
     
     box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.15);
