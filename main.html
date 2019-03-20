@@ -8,8 +8,8 @@
         <title>css task</title>
     </head>
     <body>
-        <div class='background-left'>
-            <div class='author'>
+        <div class='background-left '>
+            <div class='author clearfix'>
                 <img class='author-photo' src='./lr2/photo/author.jpg'>
                 <h3 class='author-name'>Matthew Schwartz</h3>
                 </br>
@@ -21,7 +21,7 @@
                 <img class='logo' src='.\LR2\icons\icon-linkedin.svg'>
             </div>
             <div class='goto-website'>
-                <img class='arrow-left' src='.\LR2\icons\arrow-left.svg'>
+                <a href='./main.html'><img class='arrow-left' src='.\LR2\icons\arrow-left.svg'></a>
                 <p class='website-text'>Go to my website</p>
             </div>
         </div>
@@ -31,7 +31,9 @@
             <h2 class='Sub-title'> When a Web Design Template Makes Sense. In general, you may want
                 to select a pre-configured web design template, when you're in the
                 following situations...</h2>
-            <a href='./main.html#page2'><img class='arrow-down' src='./lr2/icons/arrow-down.svg'></a>
+            <a href='./main.html#page2'>
+                <img class='arrow-down' src='./lr2/icons/arrow-down.svg'>
+            </a>
             <!-- NEXT PAGE -->
             <h2 class='Headline-H2' id='page2'>One morning, when Gregor Samsa woke from troubled dreams...</h2>
             <p class='text'>...he found himself transformed in his bed into a horrible
@@ -100,10 +102,13 @@
                         <p class="bio">And what's more, would he have been entirely wrong in this case? Gregor did in fact, apart from
                             excessive sleepiness
                             after sleeping for so long, feel completely well and even felt much hungrier than usual.</p>
-                        <form class='subscribe-form'>   
-                            <input type='text' class="input-field" placeholder="Subscribe now!">
-                            <input type='submit' class="subscribe-button" value='Subscribe'>
-                        </form>
+                        <div class='subscribe-form'>
+                            <form>
+                                <input type='text' class="input-field" placeholder="Subscribe now!">
+                                <input type='submit' class="subscribe-button" value='Subscribe'>
+                            </form>
+                        </div>
+
 
                     </div>
                 </div>
@@ -111,21 +116,24 @@
             </div>
         </div>
 
+       
+
         <script>
-            var arrow = document.getElementsByClassName('arrow-down');
-            arrow = arrow[0];
             window.onscroll = function() {
+                var arrow = document.getElementsByClassName('arrow-down');
+                arrow = arrow[0];
                 // arrow.style.opacity = "100";
                 // arrow.style.animationName = "disappear";
                 // arrow.style.animationIterationCount = "1";
                 // arrow.style.animationPlayState = "running";
                 arrow.style.visibility = 'hidden';
-            };
-            // arrow.onclick = function() {
-            //     var pos = document.getElementsByClassName('Headline-H2');
-            //     pos = pos[0];
-            //     pos.scrollIntoView();
-            // }
+
+
+                var left = document.getElementsByClassName('background-left');
+                left = left[0];
+                // console.log(document.documentElement.scrollLeft);
+                left.style.left = -document.documentElement.scrollLeft+'px';
+            }
         </script>
     </body>
 </html>
