@@ -18,7 +18,7 @@ body
     font-weight: normal;
     src: url('./fonts/geomanist-regular.eot'),
      url('./fonts/geomanist-regular.woff') format('woff'),
-     url('.//fonts/geomanist-regular.ttf') format('truetype'),
+     url('./fonts/geomanist-regular.ttf') format('truetype'),
      url('./fonts/geomanist-regular.svg') format('svg');
 }
 
