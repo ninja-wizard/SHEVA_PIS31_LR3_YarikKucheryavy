@@ -16,10 +16,10 @@ body
 @font-face{
     font-family: 'Geomantist';
     font-weight: normal;
-    src: url('./LR2/fonts/geomanist-regular.eot'),
-     url('./LR2/fonts/geomanist-regular.woff') format('woff'),
-     url('./LR2/fonts/geomanist-regular.ttf') format('truetype'),
-     url('./LR2/fonts/geomanist-regular.svg') format('svg');
+    src: url('./fonts/geomanist-regular.eot'),
+     url('./fonts/geomanist-regular.woff') format('woff'),
+     url('.//fonts/geomanist-regular.ttf') format('truetype'),
+     url('./fonts/geomanist-regular.svg') format('svg');
 }
 
 .background-left
@@ -27,7 +27,7 @@ body
     width: 50%;
     min-width: 516px;
     height: 100%;
-    background: url('./lr2/photo/wallpaper.png');
+    background: url('./photo/wallpaper.png');
     background-size: cover;
     position: fixed;
     top: 0;
@@ -435,7 +435,7 @@ body
     width: 96px;
     height: 96px;
     background-color: #5a5aff;
-    background-image: url('./LR2/icons/share.svg');
+    background-image: url('./icons/share.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -525,7 +525,7 @@ body
     margin-right: 50px;
 
 
-    background-image: url('./LR2/icons/mail.svg');
+    background-image: url('./icons/mail.svg');
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: 16px 10px;
