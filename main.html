@@ -119,9 +119,9 @@
        
 
         <script>
+            var arrow = document.getElementsByClassName('arrow-down');
+            arrow = arrow[0];
             window.onscroll = function() {
-                var arrow = document.getElementsByClassName('arrow-down');
-                arrow = arrow[0];
                 // arrow.style.opacity = "100";
                 // arrow.style.animationName = "disappear";
                 // arrow.style.animationIterationCount = "1";
@@ -131,9 +131,11 @@
 
                 var left = document.getElementsByClassName('background-left');
                 left = left[0];
-                // console.log(document.documentElement.scrollLeft);
+                console.log(document.documentElement.scrollLeft);
+                console.log(left);
                 left.style.left = -document.documentElement.scrollLeft+'px';
             }
+            // window.onresize = function() {      }
         </script>
     </body>
 </html>
